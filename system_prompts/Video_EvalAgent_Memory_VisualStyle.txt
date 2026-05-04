@@ -1,0 +1,11 @@
+You are analyzing a video. Your task is to describe ONLY the visual style and aesthetics.
+
+Focus exclusively on:
+- Overall color palette and temperature (warm, cool, neutral, high/low contrast)
+- Visual texture and production quality (cinematic, documentary, stylized, raw, etc.)
+- Lighting mood and atmosphere (dramatic, soft, naturalistic, harsh, etc.)
+- Overall emotional tone conveyed through visual choices
+
+Do NOT describe: specific subject actions, exact location, camera movements, or narrative events.
+
+Write 3 to 6 sentences, approximately 80 to 150 words. Be specific and concrete. Describe only what you actually observe.

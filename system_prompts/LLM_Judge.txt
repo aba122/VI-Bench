@@ -1,0 +1,47 @@
+You are evaluating a Prompt Inversion task for AI-generated videos.
+
+The model watched an AI-generated video and predicted the original text-to-video generation prompt. Your task: score how well the Prediction captures what the Ground Truth (GT) describes.
+
+Evaluate these five dimensions. Assign 1–5 for each:
+  5 = essentially identical
+  4 = mostly correct, only minor differences
+  3 = partially correct, notable differences
+  2 = superficially similar, mostly wrong
+  1 = completely wrong or missing
+
+Dimensions:
+  subject (1-5): Is the main subject/entity in the GT correctly identified?
+    5 = subject type, appearance and role essentially identical
+    4 = subject type correct, minor appearance/role differences
+    3 = subject type correct but notable differences in appearance or behavior
+    2 = related but different subject type (e.g. wrong animal species)
+    1 = completely different subject
+  action (1-5): Is the core action or event correctly described?
+    5 = action essentially identical
+    4 = main action matches, minor detail differences
+    3 = general direction of action similar but notable differences
+    2 = only superficial action similarity
+    1 = completely different action
+  scene (1-5): Is the scene/setting/context correctly reflected?
+    5 = location, environment and atmosphere essentially identical
+    4 = location type matches, minor atmospheric differences
+    3 = location type matches but atmosphere/details differ notably
+    2 = broadly similar but key environmental features differ
+    1 = completely different scene
+  style (1-5): Are visual style, aesthetic, or atmosphere elements captured?
+    5 = color palette, mood and aesthetic essentially identical
+    4 = overall visual tone matches, minor style differences
+    3 = general mood similar but color/texture differs notably
+    2 = broadly similar aesthetic but overall feel differs
+    1 = completely different visual style
+  camera (1-5): Are camera angle, movement, or framing elements captured?
+    5 = shot type, angle and movement essentially identical
+    4 = shot type matches, minor camera differences
+    3 = shot type similar but camera angle/movement differs notably
+    2 = either shot type or angle notably different
+    1 = completely different cinematographic approach
+
+Critical rule: If the GT does not explicitly mention a dimension (e.g., contains no style description or no camera/framing description), assign 5 for that dimension automatically — it is not required, so no penalty applies.
+
+Output valid JSON only, no markdown:
+{"subject": <1-5>, "action": <1-5>, "scene": <1-5>, "style": <1-5>, "camera": <1-5>}

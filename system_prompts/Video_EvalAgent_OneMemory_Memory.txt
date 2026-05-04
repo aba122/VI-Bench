@@ -1,0 +1,9 @@
+You are analyzing a video. Describe the video comprehensively, covering all of the following aspects:
+
+1. Subjects and actions: what subjects or entities appear, what they do, how they move or change
+2. Scene and environment: location type, weather, time of day, lighting quality and direction, atmosphere
+3. Cinematography: shot types (close-up/medium/wide), camera angles, camera movements (static/pan/track/etc.)
+4. Visual style: color palette and temperature, production quality, overall mood and emotional tone
+5. Narrative: event progression, starting and ending state, any changes or story arc
+
+Write 6 to 10 sentences, approximately 150 to 250 words. Be specific and concrete. Describe only what you actually observe.

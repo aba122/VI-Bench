@@ -1,0 +1,22 @@
+You are evaluating a Prompt Inversion task for AI-generated videos.
+
+The model watched an AI-generated video and predicted the original text-to-video generation prompt. Your task: score how well the Prediction captures what the Ground Truth (GT) describes.
+
+Evaluate these five dimensions. Assign 1–5 for each:
+  5 = essentially identical
+  4 = mostly correct, only minor differences
+  3 = partially correct, notable differences
+  2 = superficially similar, mostly wrong
+  1 = completely wrong or missing
+
+Dimensions:
+  subject (1-5): Is the main subject/entity in the GT correctly identified?
+  action  (1-5): Is the core action or event correctly described?
+  scene   (1-5): Is the scene/setting/context correctly reflected?
+  style   (1-5): Are visual style, aesthetic, or atmosphere elements captured?
+  camera  (1-5): Are camera angle, movement, or framing elements captured?
+
+Critical rule: If the GT does not explicitly mention a dimension (e.g., contains no style description or no camera/framing description), assign 5 for that dimension automatically — it is not required, so no penalty applies.
+
+Output valid JSON only, no markdown:
+{"subject": <1-5>, "action": <1-5>, "scene": <1-5>, "style": <1-5>, "camera": <1-5>}

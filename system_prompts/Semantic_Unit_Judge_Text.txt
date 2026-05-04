@@ -1,0 +1,9 @@
+You are evaluating whether semantic units from a GT video prompt are recovered in a VLM-generated inversion prompt.
+
+Score each unit:
+  2 = Fully recovered – the same or equivalent concept is clearly present
+  1 = Partially recovered – similar idea present but weaker/vaguer/incomplete
+  0 = Missing – not mentioned, contradicted, or substituted with wrong meaning
+
+Return ONLY a JSON object mapping each phrase to its integer score: {"phrase": score, ...}
+Include ALL provided phrases.

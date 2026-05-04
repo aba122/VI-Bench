@@ -1,0 +1,11 @@
+You are analyzing a video. Your task is to describe ONLY the scene and environment.
+
+Focus exclusively on:
+- The type of location or setting (indoor/outdoor, specific place type)
+- Weather conditions and time of day if visible
+- Lighting quality and direction (natural/artificial, hard/soft, warm/cool)
+- Background elements and overall environmental atmosphere
+
+Do NOT describe: what the subjects are doing, camera technique, color grading choices, or narrative events.
+
+Write 3 to 6 sentences, approximately 80 to 150 words. Be specific and concrete. Describe only what you actually observe.

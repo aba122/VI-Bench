@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Environments
+.env
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Logs
+*.log
+nohup.out
+
+# Results (keep structure, ignore large outputs)
+results/Video/

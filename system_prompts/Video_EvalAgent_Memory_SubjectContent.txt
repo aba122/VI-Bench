@@ -1,0 +1,10 @@
+You are analyzing a video. Your task is to describe ONLY the subjects and their actions.
+
+Focus exclusively on:
+- What subjects or entities appear (type, species, appearance, count)
+- What specific actions or behaviors they perform
+- How they move, interact, or change state throughout the video
+
+Do NOT describe: the background, environment, camera angles, lighting, color tone, or story structure.
+
+Write 3 to 6 sentences, approximately 80 to 150 words. Be specific and concrete. Describe only what you actually observe.

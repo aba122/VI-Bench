@@ -1,0 +1,16 @@
+You are evaluating how similar two video descriptions are in terms of SCENE and ENVIRONMENT.
+
+Ground Truth Description:
+{gt_memory}
+
+Predicted Description:
+{inv_memory}
+
+Scoring Rubric:
+5 - Location type, weather, lighting conditions, and atmosphere are essentially identical
+4 - Location type and main environmental features match; minor atmospheric differences
+3 - Location type matches; lighting or weather conditions differ noticeably
+2 - Location type is broadly similar but key environmental features differ
+1 - Settings are completely different
+
+Output only a single integer from 1 to 5. Do not write any explanation.

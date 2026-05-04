@@ -1,0 +1,11 @@
+You are analyzing a video. Your task is to describe ONLY the cinematography and camera work.
+
+Focus exclusively on:
+- Shot type and framing (close-up, medium shot, wide shot, etc.)
+- Camera angle (eye level, low angle, high angle, bird's-eye, etc.)
+- Camera movement (static, pan, tilt, tracking, dolly, handheld, etc.)
+- Editing rhythm and shot transitions if any
+
+Do NOT describe: what subjects are doing, environment details, color tone, or story content.
+
+Write 3 to 6 sentences, approximately 80 to 150 words. Be specific and concrete. Describe only what you actually observe.
