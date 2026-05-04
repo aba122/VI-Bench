@@ -44,6 +44,10 @@ The core pipeline:
 - **2** video generation models: Hunyuan-Distill (480p) and Wan 2.1 (480x832)
 - **5** evaluation dimensions: Subject, Action, Scene, Style, Camera
 
+<p align="center">
+  <img src="assets/statistics.png" width="90%">
+</p>
+
 ## Evaluated Models
 
 We evaluate **18 Video Language Models** spanning open-source and proprietary:
@@ -62,22 +66,6 @@ We evaluate **18 Video Language Models** spanning open-source and proprietary:
 | GPT-4o | - | Proprietary |
 | Doubao-Seed-2.0-pro | - | Proprietary |
 
-## Evaluation Metrics
-
-| Metric | Type | Description |
-|--------|------|-------------|
-| **LLM-Judge** | Text | 5-dimension scoring (subject, action, scene, style, camera) |
-| **Semantic Unit Recovery** | Text | Fine-grained semantic phrase matching |
-| **Video-EvalAgent** | Video | Agent-based multi-dimensional video comparison |
-| **CLIP-T** | Video | Text-video semantic similarity |
-| **FVD** | Video | Frechet Video Distance |
-
-<p align="center">
-  <img src="assets/correlation.png" width="85%">
-  <br>
-  <em>Correlation between VI-Bench Video Score and mainstream video understanding benchmarks.</em>
-</p>
-
 ## Quick Start
 
 ### 1. Dataset
@@ -90,11 +78,9 @@ data/
 │   ├── Easy.json          # Easy-level GT prompts
 │   ├── Medium.json        # Medium-level GT prompts (with style & camera)
 │   └── Hard.json          # Hard-level GT prompts (multi-shot)
-├── Videos/
-│   ├── Split_A.json       # Video metadata & paths
-│   └── Split_B.json
-└── System_Prompts/
-    └── unified_prompt.txt # System prompt for VLM inference
+└── Videos/
+    ├── Split_A.json       # Video metadata & paths
+    └── Split_B.json
 ```
 
 ### 2. Inference
@@ -155,32 +141,9 @@ VI-Bench/
 │   ├── semantic_unit_recovery.py
 │   ├── Video-EvalAgent/    # Agent-based video evaluation
 │   └── ...
-├── system_prompts/         # All system prompts used in the pipeline
 └── assets/                 # Figures for README
-```
-
-## System Prompts
-
-All system prompts used across inference, evaluation, and data construction are collected in `system_prompts/`. See the [full list](system_prompts/README.md).
-
-## Citation
-
-If you find VI-Bench useful, please cite our paper:
-
-```bibtex
-@article{vibench2025,
-  title={VI-Bench: Benchmarking Video Language Models via Video Prompt Inversion},
-  author={},
-  journal={arXiv preprint arXiv:xxxx.xxxxx},
-  year={2025}
-}
 ```
 
 ## License
 
 This project is released under the [MIT License](LICENSE).
-
-## Acknowledgements
-
-- Video generation powered by [HunyuanVideo](https://github.com/Tencent/HunyuanVideo) and [Wan 2.1](https://github.com/Wan-Video/Wan2.1)
-- Evaluation framework inspired by [Video-MME](https://github.com/BradyFU/Video-MME), [MVBench](https://github.com/OpenGVLab/Ask-Anything), and [MLVU](https://github.com/JUNJIE99/MLVU)

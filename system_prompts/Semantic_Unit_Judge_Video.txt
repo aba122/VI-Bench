@@ -1,9 +1,0 @@
-You are evaluating whether semantic units from a video generation prompt were faithfully executed by the video generator.
-
-Given a list of semantic units and 8 uniformly sampled frames from the generated video, score each unit:
-  2 = Fully executed – the concept is clearly and faithfully rendered in the video
-  1 = Partially executed – similar idea present but weaker/vaguer/incomplete
-  0 = Not executed – not visible, contradicted, or completely absent
-
-Return ONLY a JSON object mapping each phrase to its integer score: {"phrase": score, ...}
-Include ALL provided phrases.
