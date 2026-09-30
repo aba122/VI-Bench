@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/xxxx.xxxxx"><img src="https://img.shields.io/badge/arXiv-Paper-red" alt="arXiv"></a>
-  <a href="https://huggingface.co/datasets/aba122/VI-Bench"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow" alt="Dataset"></a>
+  <a href="https://huggingface.co/datasets/wulin222/VI-Bench"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow" alt="Dataset"></a>
   <a href="https://github.com/aba122/VI-Bench"><img src="https://img.shields.io/badge/GitHub-Code-blue" alt="Code"></a>
 </p>
 
@@ -70,7 +70,7 @@ We evaluate **18 Video Language Models** spanning open-source and proprietary:
 
 ### 1. Dataset
 
-Download the dataset from [HuggingFace](https://huggingface.co/datasets/aba122/VI-Bench) or prepare it locally:
+Download the dataset from [HuggingFace](https://huggingface.co/datasets/wulin222/VI-Bench) or prepare it locally:
 
 ```
 data/
